@@ -30,40 +30,52 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZq-jq-469"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-FL-BRW">
-                                <rect key="frame" x="288" y="37" width="25" height="21"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2Q-aI-cwx">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2Q-aI-cwx">
+                                <rect key="frame" x="288" y="28" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-3c-WSd">
-                                <rect key="frame" x="251" y="66" width="98" height="30"/>
+                                <rect key="frame" x="251" y="57" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rR4-Vb-BP8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgS-o3-lw5">
+                                <rect key="frame" x="279" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="h8L-0L-PWo" firstAttribute="top" secondItem="rad-Qp-nAv" secondAttribute="bottom" constant="8" id="5cC-7O-bz9"/>
-                            <constraint firstItem="vcE-3c-WSd" firstAttribute="top" secondItem="FWf-FL-BRW" secondAttribute="bottom" constant="8" id="VUf-Tt-lyf"/>
-                            <constraint firstItem="FWf-FL-BRW" firstAttribute="centerX" secondItem="vcE-3c-WSd" secondAttribute="centerX" id="bIr-u1-k5S"/>
-                            <constraint firstItem="rad-Qp-nAv" firstAttribute="top" secondItem="vcE-3c-WSd" secondAttribute="bottom" constant="210" id="boF-Au-XAf"/>
-                            <constraint firstItem="h8L-0L-PWo" firstAttribute="centerX" secondItem="vcE-3c-WSd" secondAttribute="centerX" id="c15-MJ-acR"/>
-                            <constraint firstItem="FWf-FL-BRW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="hIC-Tg-W8B"/>
-                            <constraint firstItem="FWf-FL-BRW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mIo-lV-REy"/>
-                            <constraint firstItem="rad-Qp-nAv" firstAttribute="centerX" secondItem="vcE-3c-WSd" secondAttribute="centerX" id="muu-4i-rs3"/>
+                            <constraint firstItem="C2Q-aI-cwx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0he-c5-7Cm"/>
+                            <constraint firstItem="kgS-o3-lw5" firstAttribute="top" secondItem="C2Q-aI-cwx" secondAttribute="top" id="BSt-V7-nyz"/>
+                            <constraint firstItem="rad-Qp-nAv" firstAttribute="top" secondItem="vcE-3c-WSd" secondAttribute="bottom" constant="219" id="EwV-dt-4NT"/>
+                            <constraint firstItem="vcE-3c-WSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kw8-IU-KvX"/>
+                            <constraint firstItem="kgS-o3-lw5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LMR-1p-Rdf"/>
+                            <constraint firstItem="h8L-0L-PWo" firstAttribute="centerX" secondItem="vcE-3c-WSd" secondAttribute="centerX" id="Ldc-Cm-ZTB"/>
+                            <constraint firstItem="rad-Qp-nAv" firstAttribute="centerX" secondItem="vcE-3c-WSd" secondAttribute="centerX" id="Mze-o1-w5s"/>
+                            <constraint firstItem="h8L-0L-PWo" firstAttribute="top" secondItem="rad-Qp-nAv" secondAttribute="bottom" constant="8" id="cNB-BP-74E"/>
+                            <constraint firstItem="vcE-3c-WSd" firstAttribute="top" secondItem="C2Q-aI-cwx" secondAttribute="bottom" constant="8" id="ftO-bt-UVg"/>
+                            <constraint firstItem="C2Q-aI-cwx" firstAttribute="centerX" secondItem="vcE-3c-WSd" secondAttribute="centerX" id="ox1-1g-JOu"/>
+                            <constraint firstItem="C2Q-aI-cwx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qwR-wi-cup"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ox1-1g-JOu"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="rad-Qp-nAv" id="QFX-VK-Mm3"/>
-                        <outlet property="questionLabel" destination="C2Q-aI-cwx" id="VA2-ys-e6c"/>
+                        <outlet property="currentQuestionLabel" destination="C2Q-aI-cwx" id="Feg-5A-CLN"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="0he-c5-7Cm" id="mI0-YA-RA2"/>
+                        <outlet property="nextQuestionLabel" destination="kgS-o3-lw5" id="ubw-C6-UBH"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="LMR-1p-Rdf" id="X4I-I1-GsH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

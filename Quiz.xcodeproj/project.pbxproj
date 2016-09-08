@@ -293,6 +293,7 @@
 				DB5EE6D01D066F5500AE400C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
